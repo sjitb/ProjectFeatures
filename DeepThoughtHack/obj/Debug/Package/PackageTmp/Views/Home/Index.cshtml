@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2>Deep Thought Demo</h2>
+</div>
+<div class="content-wrapper py-3">
+    <div class="container-fluid">
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Index</a>
+            </li>
+            <li class="breadcrumb-item active">Deep Thought</li>
+        </ol>
+        <!-- D3 Example -->
+        <div class="row">
+            <svg id="svgHome" width="960" height="570"></svg>
+            <form>
+                <label><input type="radio" name="mode" value="sumBySize" checked> Size</label>
+                <label><input type="radio" name="mode" value="sumByCount"> Count</label>
+            </form>
+        </div>
+        <div class="=row">
+            <h2>A treemap recursively subdivides area into rectangles; the area of any node in the tree corresponds to its value.</h2>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- /.content-wrapper -->
+<!-- Scroll to Top Button -->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+</a>
+@Styles.Render("~/Dashboard/css")
+
+@Scripts.Render("~/bundles/home")
